@@ -1,7 +1,7 @@
 START TRANSACTION;
 
-CREATE DATABASE IF NOT EXISTS soccerdb;
-USE soccerdb;
+CREATE DATABASE IF NOT EXISTS SOCCERSTAT;
+USE SOCCERSTAT;
 
 CREATE TABLE IF NOT EXISTS Team_Attributes (
 id	INTEGER PRIMARY KEY AUTO_INCREMENT,
@@ -344,7 +344,7 @@ FOREIGN KEY(player_api_id) REFERENCES Player(player_api_id);
 COMMIT;
 
 START TRANSACTION; 
-USE soccerdb;
+USE SOCCERSTAT;
 INSERT INTO Player (id, player_api_id, player_name, player_fifa_api_id, birthday, height, weight) VALUES ('6856', '5440', 'Marjan Petkovic', '122118', '1979-05-22 00:00:00', '185.42', '185');
 INSERT INTO Player (id, player_api_id, player_name, player_fifa_api_id, birthday, height, weight) VALUES ('7320', '9079', 'Mensur Mujdza', '192754', '1984-03-28 00:00:00', '185.42', '170');
 INSERT INTO Player (id, player_api_id, player_name, player_fifa_api_id, birthday, height, weight) VALUES ('8457', '10950', 'Pavel Krmas', '180942', '1980-03-03 00:00:00', '193.04', '190');
